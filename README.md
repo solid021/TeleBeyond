@@ -1,6 +1,6 @@
 # TeleBeyond
 
-**An advanced and powerful administration bot based on [SEEDTEAM/TeleSeed) licensed under the [GNU General Public License](https://github.com/solid021/TeleBeyond/blob/master/LICENSE)**.
+**An advanced and powerful administration bot based on (SEEDTEAM/TeleSeed) licensed under the [GNU General Public License](https://github.com/solid021/TeleBeyond/blob/master/LICENSE)**.
 
 #Don't Forget Star To Us ;)
 
@@ -38,10 +38,10 @@ sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgr
 
 After you run the bot for first time, send it `!id`. Get your ID and stop the bot.
 
-Put You Telegram ID In ./data/config.lua
+Put Your Telegram ID In ./data/config.lua
 ```
   sudo_users = {
- 156059515,
+ 157059515,
     YourID
   }
 ```
@@ -50,12 +50,12 @@ Then restart the bot.
 Create a realm using the `!createrealm` command.
 
 #Sudo Users :
-[Telegram.me/SoLiD021]
-[Telegram.me/MrHalix]
-[Telegram.me/@idivanmanheb]
+(Telegram.me/SoLiD021)
+(Telegram.me/MrHalix)
+(Telegram.me/idivaNmanheB)
 
 #Team Channel :
-[Telegram.me/BeyondTeam]
+(Telegram.me/BeyondTeam)
 
 Special Thx To :
 Seed Team
