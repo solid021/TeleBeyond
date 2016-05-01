@@ -272,21 +272,25 @@ function create_config( )
     "GET",
     "link"
     },
-    sudo_users = {157059515,162108576},--Sudo users
+    sudo_users = {157059515},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Tele Gulf V4.1
-The PowerFull Bot Based On Quick And Written In Lua
+    about_text = [[😎Tele Beyond V4.5😎
+➡️An Administrator The PowerFull Bot Based On TeleSeed And Bilingual Written On Lua⬅️
 
-Sudo Users :
+▶️Sudo Users :
+
 Developer&Founder : @SoLiD021
-Sponser&Manager : @Parsa_Psg
 
-Team Channel :
-@PersianGulf_Team
-Special Thx To :
-Quick Team
-Amir Sbss
+Manager&Helper : @MrHalix
+
+#⃣Team Channel :
+✌️ @BeyondTeam ✌️
+
+❤️Special Thx To :
+@idivanmanheb
+Beyond Team
+And All My Friends
 ]],
     help_text_realm = [[
 Realm Commands:
