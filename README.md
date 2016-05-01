@@ -50,12 +50,16 @@ Then restart the bot.
 Create a realm using the `!createrealm` command.
 
 #Sudo Users :
-[Solid](Telegram.me/SoLiD021)
-[MrHalix](Telegram.me/MrHalix)
-[Behnam](Telegram.me/idivaNmanheB)
+
+#[Solid](Telegram.me/SoLiD021)
+
+#[MrHalix](Telegram.me/MrHalix)
+
+#[Behnam](Telegram.me/idivaNmanheB)
 
 #Team Channel :
-(Telegram.me/BeyondTeam)
+
+#[BeyondTeam](Telegram.me/BeyondTeam)
 
 #Special Thx To :
 
