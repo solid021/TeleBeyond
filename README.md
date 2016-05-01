@@ -51,15 +51,15 @@ Create a realm using the `!createrealm` command.
 
 #Sudo Users :
 
-#[Solid](Telegram.me/SoLiD021)
+#[Solid](https://Telegram.me/SoLiD021)
 
-#[MrHalix](Telegram.me/MrHalix)
+#[MrHalix](https://Telegram.me/MrHalix)
 
-#[Behnam](Telegram.me/idivaNmanheB)
+#[Behnam](https://Telegram.me/idivaNmanheB)
 
 #Team Channel :
 
-#[BeyondTeam](Telegram.me/BeyondTeam)
+#[BeyondTeam](/https://Telegram.me/BeyondTeam)
 
 #Special Thx To :
 
