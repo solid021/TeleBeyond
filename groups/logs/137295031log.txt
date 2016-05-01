@@ -1,0 +1,316 @@
+[ Sat Apr  9 12:33:57 2016 ]=>  ‌‌‌‌̲̅_™βĐ™ [199491507] revoked group link 
+ 
+[ Sat Apr  9 12:34:05 2016 ]=>  ‌‌‌‌̲̅_™βĐ™ [199491507] requested group link [https://telegram.me/joinchat/C46HnAgu9Lcl2bifRmH1_w]
+ 
+[ Mon Apr 11 10:42:27 2016 ]=>  ™βĐ™ [199491507] requested group link [https://telegram.me/joinchat/C46HnAgu9Lcl2bifRmH1_w]
+ 
+[ Mon Apr 11 10:44:10 2016 ]=>  Åґтiη___βĐ™ [127638686] requested group link [https://telegram.me/joinchat/C46HnAgu9Lcl2bifRmH1_w]
+ 
+[ Mon Apr 11 10:44:18 2016 ]=>  Åґтiη___βĐ™ [127638686] used /owner
+ 
+[ Mon Apr 11 10:44:41 2016 ]=>  Åґтiη___βĐ™ [127638686] Used /res AAA_psg
+ 
+[ Mon Apr 11 10:46:00 2016 ]=>  Åґтiη___βĐ™ [127638686] left using kickme 
+ 
+[ Mon Apr 11 10:46:01 2016 ]=>  ✌️ፐɛʆε👉👈βĐ™✌️ [0] deleted user  user#id127638686
+ 
+[ Mon Apr 11 10:48:48 2016 ]=>  Åґтiη___βĐ™ [127638686] left using kickme 
+ 
+[ Mon Apr 11 10:48:48 2016 ]=>  ✌️ፐɛʆε👉👈βĐ™✌️ [0] deleted user  user#id127638686
+ 
+[ Mon Apr 11 10:49:51 2016 ]=>  Åґтiη___βĐ™ [127638686] left using kickme 
+ 
+[ Mon Apr 11 10:49:51 2016 ]=>  ✌️ፐɛʆε👉👈βĐ™✌️ [0] deleted user  user#id127638686
+ 
+[ Mon Apr 11 10:50:26 2016 ]=>  Åґтiη___βĐ™ [127638686] left using kickme 
+ 
+[ Mon Apr 11 10:50:26 2016 ]=>  ✌️ፐɛʆε👉👈βĐ™✌️ [0] deleted user  user#id127638686
+ 
+[ Mon Apr 11 10:57:34 2016 ]=>  Åґтiη___βĐ™ [127638686] unlocked photo 
+ 
+[ Mon Apr 11 10:58:30 2016 ]=>  Åґтiη___βĐ™ [127638686] requested group link [https://telegram.me/joinchat/C46HnAgu9Lcl2bifRmH1_w]
+ 
+[ Mon Apr 11 11:00:31 2016 ]=>  Åґтiη___βĐ™ [127638686] left using kickme 
+ 
+[ Mon Apr 11 11:00:31 2016 ]=>  ✌️ፐɛʆε👉👈βĐ™✌️ [0] deleted user  user#id127638686
+ 
+[ Mon Apr 11 11:07:24 2016 ]=>  ✌️ፐɛʆε👉👈βĐ™✌️ [0] deleted user  user#id194881361
+ 
+[ Mon Apr 11 11:10:00 2016 ]=>  Åґтiη   βĐ™ [127638686] setted [127638686] as owner
+ 
+[ Mon Apr 11 11:10:41 2016 ]=>  ™βĐ™ [199491507] setted [199491507] as owner
+ 
+[ Mon Apr 11 11:11:19 2016 ]=>  Åґтiη   βĐ™ [127638686] setted [127638686] as owner
+ 
+[ Mon Apr 11 11:12:24 2016 ]=>  ™βĐ™ [199491507] setted [199491507] as owner
+ 
+[ Mon Apr 11 11:12:32 2016 ]=>  Åґтiη___βĐ™ [127638686] revoked group link 
+ 
+[ Mon Apr 11 18:03:22 2016 ]=>  Åґтiη___βĐ™ [127638686] requested group link [https://telegram.me/joinchat/C46HnAgu9Lc_tlRB54cr0g]
+ 
+[ Tue Apr 12 09:30:48 2016 ]=>  Åґтiη___βĐ™ [127638686] requested group settings 
+ 
+[ Tue Apr 12 09:31:23 2016 ]=>  Åґтiη___βĐ™ [127638686] locked flood 
+ 
+[ Tue Apr 12 09:31:33 2016 ]=>  Åґтiη___βĐ™ [127638686] set flood to [9]
+ 
+[ Tue Apr 12 09:31:43 2016 ]=>  Åґтiη___βĐ™ [127638686] set flood to [5]
+ 
+[ Tue Apr 12 09:34:09 2016 ]=>  Åґтiη___βĐ™ [127638686] locked arabic 
+ 
+[ Tue Apr 12 09:35:06 2016 ]=>  Åґтiη___βĐ™ [127638686] unlocked arabic 
+ 
+[ Tue Apr 12 10:31:34 2016 ]=>  Åґтiη___βĐ™ [127638686] requested group rules
+ 
+[ Tue Apr 12 10:31:45 2016 ]=>  Åґтiη___βĐ™ [127638686] has changed group rules to [هیچی]
+ 
+[ Tue Apr 12 10:31:51 2016 ]=>  Åґтiη___βĐ™ [127638686] requested group rules
+ 
+[ Fri Apr 15 12:16:57 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /owner
+ 
+[ Fri Apr 15 12:17:07 2016 ]=>  𝓐ℛ𝓣𝓘𝓝 βĐ™ [127638686] setted [127638686] as owner
+ 
+[ Fri Apr 15 12:17:55 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] Used /res AAA_OO
+ 
+[ Fri Apr 15 12:20:03 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] set [199491507] as owner
+ 
+[ Sat Apr 16 17:14:49 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked name 
+ 
+[ Sat Apr 16 17:14:55 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] tried to change name but failed  
+ 
+[ Sat Apr 16 17:15:27 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked bots 
+ 
+[ Tue Apr 19 11:46:21 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group link [https://telegram.me/joinchat/C46HnAgu9Lc_tlRB54cr0g]
+ 
+[ Tue Apr 19 11:46:48 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group link [https://telegram.me/joinchat/C46HnAgu9Lc_tlRB54cr0g]
+ 
+[ Tue Apr 19 11:47:03 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group link [https://telegram.me/joinchat/C46HnAgu9Lc_tlRB54cr0g]
+ 
+[ Tue Apr 19 11:47:07 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] revoked group link 
+ 
+[ Tue Apr 19 11:47:26 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group link [https://telegram.me/joinchat/C46HnAgu9Le1UwP8Ec4PJA]
+ 
+[ Thu Apr 21 06:34:10 2016 ]=>  Reza/_βĐ™ [96700621] used /owner
+ 
+[ Thu Apr 21 06:34:29 2016 ]=>  Reza/_βĐ™ [96700621] Used /res Artin1694
+ 
+[ Thu Apr 21 06:34:54 2016 ]=>  Reza/_βĐ™ [96700621] Used /res AAA_OO
+ 
+[ Thu Apr 21 06:35:14 2016 ]=>  Reza/ βĐ™ [96700621] setted [96700621] as owner
+ 
+[ Thu Apr 21 06:35:30 2016 ]=>  𝓐ℛ𝓣𝓘𝓝 βĐ™ [127638686] setted [127638686] as owner
+ 
+[ Fri Apr 22 06:03:10 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Fri Apr 22 11:06:53 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group link [https://telegram.me/joinchat/C46HnAgu9Le1UwP8Ec4PJA]
+ 
+[ Fri Apr 22 12:50:43 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group settings 
+ 
+[ Fri Apr 22 12:55:11 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked fwd 
+ 
+[ Fri Apr 22 12:55:20 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked fwd 
+ 
+[ Fri Apr 22 12:55:47 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] unlocked fwd 
+ 
+[ Fri Apr 22 12:57:15 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked bots 
+ 
+[ Fri Apr 22 12:58:17 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id205069683
+ 
+[ Fri Apr 22 12:59:09 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked fwd 
+ 
+[ Fri Apr 22 14:51:41 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] has changed group description to [s]
+ 
+[ Fri Apr 22 14:51:46 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group description
+ 
+[ Fri Apr 22 16:45:52 2016 ]=>  MohammadHossein [87933252] deleted user  user#id87933252
+ 
+[ Sat Apr 23 10:49:26 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group link [https://telegram.me/joinchat/C46HnAgu9Le1UwP8Ec4PJA]
+ 
+[ Sat Apr 23 10:49:51 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group link [https://telegram.me/joinchat/C46HnAgu9Le1UwP8Ec4PJA]
+ 
+[ Sat Apr 23 11:18:06 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] left using kickme 
+ 
+[ Sat Apr 23 11:18:06 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id127638686
+ 
+[ Sat Apr 23 14:04:30 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Sat Apr 23 14:04:41 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] unlocked bots 
+ 
+[ Sat Apr 23 14:07:03 2016 ]=>  [X]_βĐ™ [217942221] used /id 
+ 
+[ Sat Apr 23 14:07:03 2016 ]=>  [X]_βĐ™ [217942221] used /id 
+ 
+[ Sat Apr 23 14:07:12 2016 ]=>  [X]_βĐ™ [217942221] used /id 
+ 
+[ Sat Apr 23 14:07:31 2016 ]=>  [X]_βĐ™ [217942221] used /id 
+ 
+[ Sat Apr 23 14:07:41 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id217942221
+ 
+[ Sat Apr 23 14:28:47 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked bots 
+ 
+[ Sat Apr 23 14:29:36 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked fwd 
+ 
+[ Sat Apr 23 15:06:52 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] deleted user  user#id219030009
+ 
+[ Sat Apr 23 16:47:34 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Sun Apr 24 09:49:54 2016 ]=>  ✔Reza/βĐ™ [96700621] left using kickme 
+ 
+[ Sun Apr 24 09:49:54 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id96700621
+ 
+[ Sun Apr 24 12:35:47 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Sun Apr 24 12:45:27 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Sun Apr 24 12:46:12 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /owner
+ 
+[ Sun Apr 24 12:46:25 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] set [00] as owner
+ 
+[ Sun Apr 24 12:46:47 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] set [127638686] as owner
+ 
+[ Sun Apr 24 12:53:37 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /owner
+ 
+[ Sun Apr 24 12:54:44 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group modlist
+ 
+[ Sun Apr 24 12:54:55 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] cleaned modlist
+ 
+[ Sun Apr 24 12:55:02 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group modlist
+ 
+[ Sun Apr 24 12:55:23 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Sun Apr 24 12:55:27 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Sun Apr 24 13:30:21 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Sun Apr 24 13:30:38 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Sun Apr 24 13:30:38 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /owner
+ 
+[ Sun Apr 24 13:30:38 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] set [00] as owner
+ 
+[ Sun Apr 24 13:30:38 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] set [127638686] as owner
+ 
+[ Sun Apr 24 13:30:41 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /owner
+ 
+[ Sun Apr 24 13:30:41 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group modlist
+ 
+[ Sun Apr 24 13:30:41 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group modlist
+ 
+[ Sun Apr 24 13:30:41 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Sun Apr 24 13:30:41 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Sun Apr 24 13:57:40 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] revoked group link 
+ 
+[ Sun Apr 24 13:57:43 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group link [https://telegram.me/joinchat/C46HnAgu9LcHoRStn5SO9w]
+ 
+[ Sun Apr 24 13:59:17 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] Used /res 170324143
+ 
+[ Sun Apr 24 13:59:35 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Sun Apr 24 14:02:11 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked member 
+ 
+[ Sun Apr 24 14:02:23 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id75967197
+ 
+[ Sun Apr 24 14:02:23 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id75967197
+ 
+[ Sun Apr 24 14:02:23 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id75967197
+ 
+[ Sun Apr 24 14:02:40 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] unlocked member 
+ 
+[ Sun Apr 24 14:02:46 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked tag 
+ 
+[ Sun Apr 24 14:03:12 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked flood 
+ 
+[ Sun Apr 24 14:03:21 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] unlocked flood 
+ 
+[ Sun Apr 24 14:03:32 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group settings 
+ 
+[ Sun Apr 24 14:04:03 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] set flood to [10]
+ 
+[ Sun Apr 24 14:04:09 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] unlocked flood 
+ 
+[ Sun Apr 24 14:04:21 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group settings 
+ 
+[ Sun Apr 24 14:05:07 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] unlocked flood 
+ 
+[ Sun Apr 24 14:05:14 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked flood 
+ 
+[ Sun Apr 24 14:05:19 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] requested group settings 
+ 
+[ Sun Apr 24 14:05:41 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked chat
+ 
+[ Sun Apr 24 14:05:54 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] unlocked chat
+ 
+[ Sun Apr 24 15:25:16 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked media 
+ 
+[ Sun Apr 24 15:25:27 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] unlocked media 
+ 
+[ Sun Apr 24 17:31:57 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Sun Apr 24 17:33:21 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id75967197
+ 
+[ Sun Apr 24 17:33:39 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id75967197
+ 
+[ Mon Apr 25 08:15:17 2016 ]=>  ツ_βĐ™ [199491507] used /id 
+ 
+[ Mon Apr 25 15:21:26 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Mon Apr 25 18:03:14 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] added a bot > @ShayanKosGu_Bot
+ 
+[ Mon Apr 25 18:03:14 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id170324143
+ 
+[ Mon Apr 25 18:03:14 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id170324143
+ 
+[ Mon Apr 25 18:04:08 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] unlocked bots 
+ 
+[ Mon Apr 25 18:04:12 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] added a bot > @ShayanKosGu_Bot
+ 
+[ Mon Apr 25 18:04:13 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id170324143
+ 
+[ Mon Apr 25 18:04:22 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] unlocked member 
+ 
+[ Mon Apr 25 18:04:26 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] added a bot > @ShayanKosGu_Bot
+ 
+[ Mon Apr 25 18:04:26 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id170324143
+ 
+[ Mon Apr 25 18:04:51 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] added a bot > @ShayanKosGu_Bot
+ 
+[ Mon Apr 25 18:04:51 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id170324143
+ 
+[ Mon Apr 25 18:04:59 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked joining link 
+ 
+[ Mon Apr 25 18:05:07 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] unlocked joining link 
+ 
+[ Mon Apr 25 18:05:18 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] unlocked member 
+ 
+[ Mon Apr 25 18:05:25 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] unlocked bots 
+ 
+[ Mon Apr 25 18:05:30 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] added a bot > @ShayanKosGu_Bot
+ 
+[ Mon Apr 25 18:05:30 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id170324143
+ 
+[ Mon Apr 25 18:05:54 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] unlocked sticker 
+ 
+[ Mon Apr 25 18:05:58 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] added a bot > @ShayanKosGu_Bot
+ 
+[ Mon Apr 25 18:05:58 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id170324143
+ 
+[ Mon Apr 25 18:06:10 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] added a bot > @ShayanKosGu_Bot
+ 
+[ Mon Apr 25 18:06:10 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id170324143
+ 
+[ Mon Apr 25 18:06:36 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Tue Apr 26 13:38:59 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Tue Apr 26 15:06:12 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] locked media 
+ 
+[ Tue Apr 26 15:24:38 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] unlocked media 
+ 
+[ Tue Apr 26 15:53:38 2016 ]=>  ➣ΛŔΛƊ_➣βĐ™ [199491507] used /id 
+ 
+[ Tue Apr 26 19:25:26 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 
+[ Tue Apr 26 19:25:33 2016 ]=>  𝓐ℛ𝓣𝓘𝓝_βĐ™ [127638686] used /id 
+ 

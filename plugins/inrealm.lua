@@ -7,7 +7,7 @@ local function create_group(msg)
         if is_sudo(msg) or is_realm(msg) and is_admin(msg) then
                 local group_creator = msg.from.print_name
                 create_group_chat (group_creator, group_name, ok_cb, false)
-                return 'Group [ '..string.gsub(group_name, '_', ' ')..' ] has been created.'
+                return 'گروه [ '..string.gsub(group_name, '_', ' ')..' ] ساخته شد.'
         end
 end
 
@@ -16,7 +16,7 @@ local function create_realm(msg)
         if is_sudo(msg) or is_realm(msg) and is_admin(msg) then
                 local group_creator = msg.from.print_name
                 create_group_chat (group_creator, group_name, ok_cb, false)
-                return 'Realm [ '..string.gsub(group_name, '_', ' ')..' ] has been created.'
+                return 'ریلم [ '..string.gsub(group_name, '_', ' ')..' ] ساخته شد.'
         end
 end
 
@@ -254,11 +254,11 @@ local function admin_promote(msg, admin_id)
                 save_data(_config.moderation.data, data)
         end
         if data[tostring(admins)][tostring(admin_id)] then
-                return admin_name..' is already an admin.'
+                return admin_name..' از قبل ادمین ربات بود.'
         end
         data[tostring(admins)][tostring(admin_id)] = admin_id
         save_data(_config.moderation.data, data)
-        return admin_id..' has been promoted as admin.'
+        return admin_id..' ادمین ربات شد.'
 end
 
 local function admin_demote(msg, admin_id)
@@ -272,11 +272,11 @@ local function admin_demote(msg, admin_id)
                 save_data(_config.moderation.data, data)
         end
         if not data[tostring(admins)][tostring(admin_id)] then
-                return admin_id..' is not an admin.'
+                return admin_id..' از قبل ادمین ربات نبود.'
         end
         data[tostring(admins)][tostring(admin_id)] = nil
         save_data(_config.moderation.data, data)
-        return admin_id..' has been demoted from admin.'
+        return admin_id..' از ادمینی ربات برکنار شد.'
 end
  
 local function admin_list(msg)
@@ -286,7 +286,7 @@ local function admin_list(msg)
         data[tostring(admins)] = {}
         save_data(_config.moderation.data, data)
         end
-        local message = 'List for Realm admins:\n'
+        local message = 'لیست ادمین های ربات :\n'
         for k,v in pairs(data[tostring(admins)]) do
                 message = message .. '- (at)' .. v .. ' [' .. k .. '] ' ..'\n'
         end
@@ -364,11 +364,11 @@ local function admin_user_promote(receiver, member_username, member_id)
                 save_data(_config.moderation.data, data)
         end
         if data['admins'][tostring(member_id)] then
-                return send_large_msg(receiver, member_username..' is already as admin.')
+                return send_large_msg(receiver, member_username..' از قبل ادمین ربات بود.')
         end
         data['admins'][tostring(member_id)] = member_username
         save_data(_config.moderation.data, data)
-        return send_large_msg(receiver, '@'..member_username..' has been promoted as admin.')
+        return send_large_msg(receiver, '@'..member_username..' ادمین ربات شد.')
 end
  
 local function admin_user_demote(receiver, member_username, member_id)
@@ -378,11 +378,11 @@ local function admin_user_demote(receiver, member_username, member_id)
                 save_data(_config.moderation.data, data)
         end
         if not data['admins'][tostring(member_id)] then
-                return send_large_msg(receiver, member_username..' is not an admin.')
+                return send_large_msg(receiver, member_username..' از قبل ادمین ربات نبود.')
         end
         data['admins'][tostring(member_id)] = nil
         save_data(_config.moderation.data, data)
-        return send_large_msg(receiver, 'Admin '..member_username..' has been demoted.')
+        return send_large_msg(receiver, 'Admin '..member_username..' از ادمینی ربات برکنار شد.')
 end
 
  
@@ -398,7 +398,12 @@ local function username_id(cb_extra, success, result)
         member_id = v.id
         if mod_cmd == 'addadmin' then
             return admin_user_promote(receiver, member_username, member_id)
-        elseif mod_cmd == 'removeadmin' then
+        elseif mod_cmd == 'remadmin' then
+            return admin_user_demote(receiver, member_username, member_id)
+end
+        if mod_cmd == 'افزودن ادمین' then
+            return admin_user_promote(receiver, member_username, member_id)
+        elseif mod_cmd == 'حذف ادمین' then
             return admin_user_demote(receiver, member_username, member_id)
         end
       end
@@ -442,25 +447,25 @@ end
 function run(msg, matches)
     --vardump(msg)
    	local name_log = user_print_name(msg.from)
-       if matches[1] == 'log' and is_owner(msg) then
+       if matches[1] == 'log' or matches[1]:lower() == 'گزارشات' and is_owner(msg) then
 		savelog(msg.to.id, "log file created by owner")
 		send_document("chat#id"..msg.to.id,"./groups/"..msg.to.id.."log.txt", ok_cb, false)
         end
 
-	if matches[1] == 'who' and is_momod(msg) then
+	if matches[1] == 'who' or matches[1]:lower() == 'اعضا' and is_momod(msg) then
 		local name = user_print_name(msg.from)
 		savelog(msg.to.id, name.." ["..msg.from.id.."] requested member list ")
 		local receiver = get_receiver(msg)
 		chat_info(receiver, returnidsfile, {receiver=receiver})
 	end
-	if matches[1] == 'wholist' and is_momod(msg) then
+	if matches[1] == 'wholist' or matches[1]:lower() == 'لیست اعضا' and is_momod(msg) then
 		local name = user_print_name(msg.from)
 		savelog(msg.to.id, name.." ["..msg.from.id.."] requested member list in a file")
 		local receiver = get_receiver(msg)
 		chat_info(receiver, returnids, {receiver=receiver})
 	end
 
-    if matches[1] == 'creategroup' and matches[2] then
+    if matches[1] == 'creategroup' or matches[1]:lower() == 'ساخت گروه' and matches[2] then
         group_name = matches[2]
         group_type = 'group'
         return create_group(msg)
@@ -470,7 +475,7 @@ function run(msg, matches)
 		return  --Do nothing
 	end
 
-    if matches[1] == 'createrealm' and matches[2] then
+    if matches[1] == 'createrealm' or matches[1]:lower() == 'ساخت ریلم' and matches[2] then
         group_name = matches[2]
         group_type = 'realm'
         return create_realm(msg)
@@ -534,7 +539,7 @@ function run(msg, matches)
                     rename_chat(to_rename, group_name_set, ok_cb, false)
                     savelog(msg.to.id, "Realm { "..msg.to.print_name.." }  name changed to [ "..new_name.." ] by "..name_log.." ["..msg.from.id.."]")
                 end
-		if matches[1] == 'setgpname' and is_admin(msg) then
+		if matches[1] == 'setgpname' or matches[1]:lower() == 'تنظیم نام گروه' and is_admin(msg) then
 		    local new_name = string.gsub(matches[3], '_', ' ')
 		    data[tostring(matches[2])]['settings']['set_name'] = new_name
 		    save_data(_config.moderation.data, data)
@@ -546,7 +551,7 @@ function run(msg, matches)
 
 	    end 
         end
-    	if matches[1] == 'help' and is_realm(msg) then
+    	if matches[1] == 'helprealm' or matches[1]:lower() == 'راهنمای ریلم' and is_realm(msg) then
       		savelog(msg.to.id, name_log.." ["..msg.from.id.."] Used /help")
      		return help()
     	end
@@ -556,7 +561,7 @@ function run(msg, matches)
                   return set_log_group(msg)
                 end
               end
-                if matches[1] == 'kill' and matches[2] == 'chat' then
+                if matches[1] == 'kill' or matches[1]:lower() == 'حذف' and matches[2] == 'chat' or matches[2]:lower() == 'گروه' then
                   if not is_admin(msg) then
                      return nil
                   end
@@ -569,7 +574,7 @@ function run(msg, matches)
                      return 'Error: Group '..matches[3]..' not found' 
                     end
                  end
-                if matches[1] == 'kill' and matches[2] == 'realm' then
+                if matches[1] == 'kill' or matches[1]:lower() == 'حذف' and matches[2] == 'realm' or matches[2]:lower() == 'ریلم' then
                   if not is_admin(msg) then
                      return nil
                   end
@@ -603,18 +608,40 @@ function run(msg, matches)
 				chat_info(receiver, username_id, {mod_cmd= mod_cmd, receiver=receiver, member=member})
 			end
 		end
-		if matches[1] == 'removeadmin' then
+		if matches[1] == 'remadmin' then
 			if string.match(matches[2], '^%d+$') then
 				local admin_id = matches[2]
 				print("user "..admin_id.." has been demoted")
 				return admin_demote(msg, admin_id)
 			else
 			local member = string.gsub(matches[2], "@", "")
-				local mod_cmd = "removeadmin"
+				local mod_cmd = "remadmin"
 				chat_info(receiver, username_id, {mod_cmd= mod_cmd, receiver=receiver, member=member})
 			end
 		end
-		if matches[1] == 'type'then
+if matches[1]:lower() == 'افزودن ادمین' then
+			if string.match(matches[2], '^%d+$') then
+				local admin_id = matches[2]
+				print("user "..admin_id.." has been promoted as admin")
+				return admin_promote(msg, admin_id)
+			else
+			local member = string.gsub(matches[2], "@", "")
+				local mod_cmd = "افزودن ادمین"
+				chat_info(receiver, username_id, {mod_cmd= mod_cmd, receiver=receiver, member=member})
+			end
+		end
+		if matches[1]:lower() == 'حذف ادمین' then
+			if string.match(matches[2], '^%d+$') then
+				local admin_id = matches[2]
+				print("user "..admin_id.." has been demoted")
+				return admin_demote(msg, admin_id)
+			else
+			local member = string.gsub(matches[2], "@", "")
+				local mod_cmd = "حذف ادمین"
+				chat_info(receiver, username_id, {mod_cmd= mod_cmd, receiver=receiver, member=member})
+			end
+		end
+		if matches[1] == 'type' or matches[1]:lower() == 'مدل' then
                         local group_type = get_group_type(msg)
 			return group_type
 		end
@@ -625,22 +652,47 @@ function run(msg, matches)
                   if msg.to.type == 'chat' then
 			groups_list(msg)
 		        send_document("chat#id"..msg.to.id, "./groups/lists/groups.txt", ok_cb, false)	
-			return "Group list created" --group_list(msg)
+			return "لیست گروه ها ساخته شد." --group_list(msg)
                    elseif msg.to.type == 'user' then 
                         groups_list(msg)
 		        send_document("user#id"..msg.from.id, "./groups/lists/groups.txt", ok_cb, false)	
-			return "Group list created" --group_list(msg)
+			return "لیست گروه ها ساخته شد." --group_list(msg)
                   end
 		end
 		if matches[1] == 'list' and matches[2] == 'realms' then
                   if msg.to.type == 'chat' then
 			realms_list(msg)
 		        send_document("chat#id"..msg.to.id, "./groups/lists/realms.txt", ok_cb, false)	
-			return "Realms list created" --realms_list(msg)
+			return "لیست ریلم ها ساخته شد." --realms_list(msg)
                    elseif msg.to.type == 'user' then 
                         realms_list(msg)
 		        send_document("user#id"..msg.from.id, "./groups/lists/realms.txt", ok_cb, false)	
-			return "Realms list created" --realms_list(msg)
+			return "لیست ریلم ها ساخته شد." --realms_list(msg)
+                  end
+		end
+		if matches[1] == 'لیست' and matches[2] == 'ادمین ها' then
+			return admin_list(msg)
+		end
+		if matches[1] == 'لیست' and matches[2] == 'گروه ها' then
+                  if msg.to.type == 'chat' then
+			groups_list(msg)
+		        send_document("chat#id"..msg.to.id, "./groups/lists/groups.txt", ok_cb, false)	
+			return "لیست گروه ها ساخته شد." --group_list(msg)
+                   elseif msg.to.type == 'user' then 
+                        groups_list(msg)
+		        send_document("user#id"..msg.from.id, "./groups/lists/groups.txt", ok_cb, false)	
+			return "لیست گروه ها ساخته شد." --group_list(msg)
+                  end
+		end
+		if matches[1] == 'لیست' and matches[2] == 'ریلم ها' then
+                  if msg.to.type == 'chat' then
+			realms_list(msg)
+		        send_document("chat#id"..msg.to.id, "./groups/lists/realms.txt", ok_cb, false)	
+			return "لیست ریلم ها ساخته شد." --realms_list(msg)
+                   elseif msg.to.type == 'user' then 
+                        realms_list(msg)
+		        send_document("user#id"..msg.from.id, "./groups/lists/realms.txt", ok_cb, false)	
+			return "لیست ریلم ها ساخته شد." --realms_list(msg)
                   end
 		end
    		 if matches[1] == 'res' and is_momod(msg) then 
@@ -658,6 +710,19 @@ end
 
 return {
   patterns = {
+    "^(افزودن ادمین) (.*)$",
+    "^(حذف ادمین) (.*)$",
+    "^(ساخت گروه) (.*)$",
+    "^(ساخت ریلم) (.*)$",
+    "^(تنظیم نام گروه) (%d+) (.*)$",
+        "^(لیست اعضا)$",
+        "^(اعضا)$",
+        "^(مدل)$",
+    "^(حذف) (گروه) (%d+)$",
+    "^(حذف) (ریلم) (%d+)$",
+    "^(لیست) (.*)$",
+        "^(گزارشات)$",
+        "^(راهنمای ریلم)$",
     "^[!/](creategroup) (.*)$",
     "^[!/](createrealm) (.*)$",
     "^[!/](setabout) (%d+) (.*)$",
@@ -674,10 +739,10 @@ return {
     "^[!/](kill) (chat) (%d+)$",
     "^[!/](kill) (realm) (%d+)$",
     "^[!/](addadmin) (.*)$", -- sudoers only
-    "^[!/](removeadmin) (.*)$", -- sudoers only
+    "^[!/](remadmin) (.*)$", -- sudoers only
     "^[!/](list) (.*)$",
         "^[!/](log)$",
-        "^[!/](help)$",
+        "^[!/](helprealm)$",
         "^!!tgservice (.+)$",
   },
   run = run

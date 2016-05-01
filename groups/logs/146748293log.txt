@@ -1,0 +1,38 @@
+[ Tue Apr 26 17:33:34 2016 ]=>  ╘═╣ηɪтʀoɢεη_βĐ™_╠═╛ [139002529] revoked group link 
+ 
+[ Tue Apr 26 17:33:38 2016 ]=>  ╘═╣ηɪтʀoɢεη_βĐ™_╠═╛ [139002529] requested group link [https://telegram.me/joinchat/C46HnAi_M4Uigx1WfoxfBQ]
+ 
+[ Tue Apr 26 17:34:27 2016 ]=>  Mohamad#1 [189039321] setted [189039321] as owner
+ 
+[ Tue Apr 26 17:34:52 2016 ]=>  ╘═╣ηɪтʀoɢεη_βĐ™_╠═╛ [139002529] used /owner
+ 
+[ Tue Apr 26 17:34:56 2016 ]=>  ╘═╣ηɪтʀoɢεη_βĐ™_╠═╛ [139002529] used /id 
+ 
+[ Tue Apr 26 17:35:18 2016 ]=>  ╘═╣ηɪтʀoɢεη_βĐ™_╠═╛ [139002529] left using kickme 
+ 
+[ Tue Apr 26 17:35:18 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id139002529
+ 
+[ Tue Apr 26 21:12:54 2016 ]=>  dash_Mahan_Tasliat [189039321] used /id 
+ 
+[ Tue Apr 26 21:13:32 2016 ]=>  dash_Mahan_Tasliat [189039321] revoked group link 
+ 
+[ Tue Apr 26 21:14:43 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] tried to change name but failed  
+ 
+[ Tue Apr 26 21:50:29 2016 ]=>  dash_Mahan_Tasliat [189039321] set flood to [5]
+ 
+[ Tue Apr 26 21:53:40 2016 ]=>  dash_Mahan_Tasliat [189039321] used /id 
+ 
+[ Tue Apr 26 21:54:15 2016 ]=>  dash_Mahan_Tasliat [189039321] promoted @@Xxmahan_dash_tasliatX
+ 
+[ Tue Apr 26 21:54:42 2016 ]=>  dash_Mahan_Tasliat [189039321] promoted @@Abolfazl_MAFIA
+ 
+[ Tue Apr 26 21:58:15 2016 ]=>  dash_Mahan_Tasliat [189039321] tried to change name but failed  
+ 
+[ Tue Apr 26 21:58:15 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] tried to change name but failed  
+ 
+[ Tue Apr 26 21:59:25 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] tried to change name but failed  
+ 
+[ Tue Apr 26 22:10:11 2016 ]=>  👑αßѺℓƒαzℓ___Maʆɩa👑 [166367800] deleted user  user#id166367800
+ 
+[ Tue Apr 26 22:10:24 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id112889519
+ 

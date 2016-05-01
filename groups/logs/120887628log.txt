@@ -1,0 +1,38 @@
+[ Thu Apr 21 06:59:38 2016 ]=>  ✌ښُــلــيــڍمــβĐ™ــۺِڹاڂٺے؟✌_@BlackLife [157059515] revoked group link 
+ 
+[ Thu Apr 21 06:59:42 2016 ]=>  ✌ښُــلــيــڍمــβĐ™ــۺِڹاڂٺے؟✌_@BlackLife [157059515] requested group link [https://telegram.me/joinchat/C46HnAc0mUzhl6Xm66SWAg]
+ 
+[ Thu Apr 21 07:01:27 2016 ]=>  ✌ښُــلــيــڍمــβĐ™ــۺِڹاڂٺے؟✌_@BlackLife [157059515] left using kickme 
+ 
+[ Thu Apr 21 07:01:27 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id157059515
+ 
+[ Thu Apr 21 07:01:33 2016 ]=>  Reza/_βĐ™ [96700621] requested group link [https://telegram.me/joinchat/C46HnAc0mUzhl6Xm66SWAg]
+ 
+[ Thu Apr 21 07:29:21 2016 ]=>  Reza/_βĐ™ [96700621] Used /res Mohammad_pnhi
+ 
+[ Thu Apr 21 07:29:27 2016 ]=>  Reza/_βĐ™ [96700621] set [143009156] as owner
+ 
+[ Thu Apr 21 07:30:39 2016 ]=>  Reza/_βĐ™ [96700621] left using kickme 
+ 
+[ Thu Apr 21 07:30:39 2016 ]=>  ✌️ፐɛ👉βĐ™👈ʆε✌️ [0] deleted user  user#id96700621
+ 
+[ Thu Apr 21 07:35:18 2016 ]=>  Mohammad [143009156] requested group modlist
+ 
+[ Thu Apr 21 07:39:59 2016 ]=>  Group { : }  name changed to [ دورهمی ] by Mohammad [143009156]
+ 
+[ Thu Apr 21 07:41:17 2016 ]=>  Mohammad [143009156] requested group link [https://telegram.me/joinchat/C46HnAc0mUzhl6Xm66SWAg]
+ 
+[ Thu Apr 21 07:44:35 2016 ]=>  Mohammad [143009156] has changed group rules to [جدید فوش ممنوع کل کل ممنوع   +18 ممنوع]
+ 
+[ Thu Apr 21 07:44:44 2016 ]=>  Mohammad [143009156] requested group rules
+ 
+[ Thu Apr 21 07:45:11 2016 ]=>  Mohammad [143009156] has changed group rules to [ فوش ممنوع   کل کل ممنوع   +18 ممنوع]
+ 
+[ Thu Apr 21 07:45:30 2016 ]=>  Mohammad [143009156] has changed group rules to [ فحش ممنوع   کل کل ممنوع   +18 ممنوع]
+ 
+[ Thu Apr 21 07:51:26 2016 ]=>  Mohammad [143009156] used /owner
+ 
+[ Thu Apr 21 21:26:45 2016 ]=>  🎧ﾑlɨ_ρﾑŋﾑɦɨ🎧 [198291701] deleted user  user#id198291701
+ 
+[ Fri Apr 22 12:46:33 2016 ]=>  Liberbot [100547061] deleted user  user#id100547061
+ 

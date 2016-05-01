@@ -1,8 +1,6 @@
-# [TeleSeed](https://telegram.me/TeleSeed)
+# QuickGuard
 
-[![Join the chat at https://gitter.im/SEEDTEAM/TeleSeed](https://badges.gitter.im/SEEDTEAM/TeleSeed.svg)](https://gitter.im/SEEDTEAM/TeleSeed?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-**An advanced and powerful administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under the [GNU General Public License](https://github.com/SEEDTEAM/TeleSeed/blob/master/LICENSE)**.
+**An advanced and powerful administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under the [GNU General Public License](https://github.com/SbssTeam/Quick-v2.7/blob/master/LICENSE)**.
 # Features
 
 * **A powerful antispam system with custom sensitivity for each group**
@@ -21,7 +19,7 @@
 * **And more!**
 
 **Table of Contents**
-- [TeleSeed](#teleseed)
+- [Quick-v2.7](#QuickGuard)
 - [Features](#features)
 - [Commands](#commands)
 	- [Admins commands](#admins-commands)
@@ -92,7 +90,7 @@
 ### Group creation
 >[!/]creategroup [group name]
 >
->>[!/]creategroup SEED
+>>[!/]creategroup Quick
 >>>will create a group
 >>>
 >>>_Only works in realms for admins but, sudo users can use it everywhere_
@@ -100,7 +98,7 @@
 ### Realm creation
 >[!/]createrealm [realm name]
 >
->>[!/]createrealm SEED
+>>[!/]createrealm Quick
 >>>will create a realm
 >>>
 >>>_Only works in realms for admins but, sudo users can use it everywhere_
@@ -140,7 +138,7 @@
 
 ### Setting group name in realm
 > [!/]setname [group_id] [text]
->>[!/]setname 123456789 SEED
+>>[!/]setname 123456789 Quick
 >>>This command will set [text] as name of [group_id]
 
 ### Setting rules in realm
@@ -202,7 +200,7 @@
 >>>This commands will globally ban [id]
 >
 >/sync_gbans
->>Sync your global bans with teleseed
+>>Sync your global bans with QuickGua
 >
 >[!/]unbanall [id]
 >>[!/]unbanall 123456789
@@ -221,7 +219,7 @@
 >>>This command will set [User_id] as the owner of [group_id]
 
 ### Bot stats
->[!/]stats teleseed
+>[!/]stats QuickGua
 >>This command will return bot stats
 
 # Realm Help
@@ -289,7 +287,7 @@ _Sudo users and admins can also use this commands in all groups_
 
 ### Changing Group name
 >[!/]setname [name]
->>[!/]setname SEED
+>>[!/]setname Quick
 >>>This command will set [name] as name of groups
 
 ### Group link
@@ -411,7 +409,7 @@ _Sudo users and admins can also use this commands in all groups_
 
 ### Change name|rules|name
 >[!/]changename [group_id] [name]
->>[!/]changename 123456789 SEED
+>>[!/]changename 123456789 Quick
 >
 >[!/]changrules [group_id] [rules]
 >>[!/]changrules 123456789 rules !
@@ -439,8 +437,8 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 
 # Let's install the bot.
 cd $HOME
-git clone https://github.com/SEEDTEAM/TeleSeed.git
-cd TeleSeed
+git clone https://github.com/SbssTeam/Quick-v2.7.git
+cd Quick-v2.7
 chmod +x launch.sh
 ./launch.sh install
 ./launch.sh # Enter a phone number & confirmation code.
@@ -449,7 +447,7 @@ chmod +x launch.sh
 To install everything in one command (useful for VPS deployment) on Debian-based distros, use:
 ```sh
 #https://github.com/yagop/telegram-bot/wiki/Installation
-sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson* libpython-dev make autoconf unzip git redis-server g++ -y --force-yes && git clone https://github.com/SEEDTEAM/TeleSeed.git && cd TeleSeed && chmod +x launch.sh && ./launch.sh install && ./launch.sh
+sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson* libpython-dev make autoconf unzip git redis-server g++ -y --force-yes && git clone https://github.com/SbssTeam/Quick-v2.7.git && cd Quick-v2.7 && chmod +x launch.sh && ./launch.sh install && ./launch.sh
 ```
 ### Realm configuration
 
@@ -468,39 +466,3 @@ Open ./data/config.lua and add your ID to the "sudo_users" section in the follow
 Then restart the bot.
 
 Create a realm using the `!createrealm` command.
-
-# Support and development
-
-Check out this [tutorial by Telegram Geeks](http://telegramgeeks.com/2016/01/teleseed-tutorial/) for further assistance with setup and installation.
-
-**Do not contact us** in private for support.
-Join our bot development group by sending `/join 56670147` to [@TeleSeed](https://telegram.me/TeleSeed)
-
-# Special thanks to
-[@seyedan25](https://telegram.me/seyedan25)
-
-For managing [@teleseed](https://telegram.me/TeleSeed) on Telegram.
-
-[@Vamptacus](https://telegram.me/Vamptacus)
-
-For graphic designs.
-
-[topkecleon](https://github.com/topkecleon)
-
-[Juan Potato](https://github.com/JuanPotato)
-
-# Our team!
-
-[Alphonse](https://github.com/hmon) ([Telegram](https://telegram.me/iwals))
-
-[I M /-\ N](https://github.com/imandaneshi) ([Telegram](https://telegram.me/imandaneshi))
-
-[Siyanew](https://github.com/Siyanew) ([Telegram](https://telegram.me/Siyanew))
-
-[Rondoozle](https://github.com/Rondoozle) ([Telegram](https://telegram.me/POTUS))
-
-### Our Telegram channels:
-
-English: [@TeleSeedCH](https://telegram.me/teleseedch)
-
-Persian: [@IranSeed](https://telegram.me/iranseed)
