@@ -1,6 +1,6 @@
-# TeleBeyond
+#TeleBeyond
 
-**An advanced and powerful administration bot based on (SEEDTEAM/TeleSeed) licensed under the [GNU General Public License](https://github.com/solid021/TeleBeyond/blob/master/LICENSE)**.
+**An advanced and powerful administration bot based on #(TeleSeed) licensed under the [GNU General Public License](https://github.com/solid021/TeleBeyond/blob/master/LICENSE)**.
 
 #Don't Forget Star To Us ;)
 
@@ -50,16 +50,19 @@ Then restart the bot.
 Create a realm using the `!createrealm` command.
 
 #Sudo Users :
-(Telegram.me/SoLiD021)
-(Telegram.me/MrHalix)
-(Telegram.me/idivaNmanheB)
+[Solid](Telegram.me/SoLiD021)
+[MrHalix](Telegram.me/MrHalix)
+[Behnam](Telegram.me/idivaNmanheB)
 
 #Team Channel :
 (Telegram.me/BeyondTeam)
 
-Special Thx To :
+#Special Thx To :
+
 Seed Team
+
 My Team
+
 And All My Friend
 
 #Good Luck :D
