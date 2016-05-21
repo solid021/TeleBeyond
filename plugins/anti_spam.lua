@@ -1,8 +1,9 @@
+--An empty table for solving multiple kicking problem(thanks to @topkecleon )
 kicktable = {}
 
 do
 
-local TIME_CHECK = 2 -- seconds
+local TIME_CHECK = 1 -- seconds
 local data = load_data(_config.moderation.data)
 -- Save stats, ban user
 local function pre_process(msg)
@@ -76,9 +77,7 @@ local function pre_process(msg)
         return
       end
       kick_user(user, chat)
-      send_large_msg(get_receiver(msg), "اسپم کردن ممنوعه😐✋!")
-      kick_user(user, chat)
-      ban_user(user, chat)
+     ban_user(user, chat)
       local name = user_print_name(msg.from)
       --save it to log file
       savelog(msg.to.id, name.." ["..msg.from.id.."] spammed and kicked ! ")
@@ -87,9 +86,9 @@ local function pre_process(msg)
       redis:incr(gbanspam)
       local gbanspam = 'gban:spam'..msg.from.id
       local gbanspamonredis = redis:get(gbanspam)
-      --Check if user has spammed is group more than 2 times  
+      --Check if user has spammed is group more than 4 times  
       if gbanspamonredis then
-        if tonumber(gbanspamonredis) == 2 and not is_momod(msg) then
+        if tonumber(gbanspamonredis) == 2 and not is_owner(msg) then
           --Global ban that user
           banall_user(msg.from.id)
           local gbanspam = 'gban:spam'..msg.from.id

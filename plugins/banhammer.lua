@@ -29,10 +29,10 @@ local function pre_process(msg)
         local banhash = 'addedbanuser:'..msg.to.id..':'..msg.from.id
         local banaddredis = redis:get(banhash) 
         if banaddredis then 
-          if tonumber(banaddredis) >= 4 and not is_owner(msg) then
+          if tonumber(banaddredis) >= 1 and not is_owner(msg) then
             kick_user(msg.from.id, msg.to.id)-- Kick user who adds ban ppl more than 3 times
           end
-          if tonumber(banaddredis) >= 8 and not is_owner(msg) then
+          if tonumber(banaddredis) >= 1 and not is_owner(msg) then
             ban_user(msg.from.id, msg.to.id)-- Kick user who adds ban ppl more than 7 times
             local banhash = 'addedbanuser:'..msg.to.id..':'..msg.from.id
             redis:set(banhash, 0)-- Reset the Counter
@@ -51,6 +51,7 @@ local function pre_process(msg)
         local name = user_print_name(msg.from)
           savelog(msg.to.id, name.." ["..msg.from.id.."] added a bot > @".. msg.action.user.username)-- Save to logs
           kick_user(msg.action.user.id, msg.to.id)
+          ban_user(msg.from.id, msg.to.id)
       end
     end
   end
@@ -130,7 +131,7 @@ local function run(msg, matches)
     elseif matches[1]:lower() == 'id' or matches[1]:lower() == 'ایدی' then
       local name = user_print_name(msg.from)
       savelog(msg.to.id, name.." ["..msg.from.id.."] used /id ")
-      return "🔤 نام شما : "..msg.from.first_name.."\n🆔 آیدی شما : "..msg.from.id.."\n\n📱 شماره شما : "..(msg.from.phone or '').."+\n\n💬 نام گروه : " ..string.gsub(msg.to.print_name, "_", " ").. "\n👥 آیدی گروه : "..msg.to.id  
+     return "🔤 نام شما : "..msg.from.first_name.."\n🆔 آیدی شما : "..msg.from.id.."\n\n📱 شماره شما : "..(msg.from.phone or '').."+\n🔣 نوع پیام : "..msg.text.."\n\n💬 نام گروه : " ..string.gsub(msg.to.print_name, "_", " ").. "\n👥 آیدی گروه : "..msg.to.id
     end
   end
   if matches[1]:lower() == 'kickme'or matches[1]:lower() == "خروج" then-- /kickme

@@ -243,6 +243,30 @@ local function show_group_settingsmod(msg, data, target)
     if data[tostring(msg.to.id)]['settings']['lock_chat'] then
     	lock_chat = data[tostring(msg.to.id)]['settings']['lock_chat']
    	end
+   	    local lock_video = "no"
+    if data[tostring(msg.to.id)]['settings']['lock_video'] then
+    	 lock_video = data[tostring(msg.to.id)]['settings']['lock_video']
+   	end
+   local lock_photos = "no"
+    if data[tostring(msg.to.id)]['settings']['lock_photos'] then
+    	lock_photos = data[tostring(msg.to.id)]['settings']['lock_photos']
+   	end
+   	  local lock_gifs = "no"
+    if data[tostring(msg.to.id)]['settings']['lock_gifs'] then
+        lock_gifs = data[tostring(msg.to.id)]['settings']['lock_gifs']
+        end
+          local lock_contact = "no"
+    if data[tostring(msg.to.id)]['settings']['lock_contact'] then
+        lock_contact = data[tostring(msg.to.id)]['settings']['lock_contact']
+        end
+        local lock_audio = "no"
+    if data[tostring(msg.to.id)]['settings']['audio'] then
+        lock_audio = data[tostring(msg.to.id)]['settings']['audio']
+        end
+        local lock_poker = "no"
+    if data[tostring(msg.to.id)]['settings']['lock_poker'] then
+    	lock_poker = data[tostring(msg.to.id)]['settings']['lock_poker']
+   	end
         --[[local arabic_lock = "no"
     if data[tostring(msg.to.id)]['settings']['arabic_lock'] then
     	 arabic_lock = data[tostring(msg.to.id)]['settings']['arabic_lock']
@@ -256,7 +280,7 @@ local function show_group_settingsmod(msg, data, target)
     if data[tostring(msg.to.id)]['settings']['groupmodel'] then
     	groupmodel = data[tostring(msg.to.id)]['settings']['groupmodel']
    	end
-   	 local version = "4.5"
+   	 local version = "Final"
     if data[tostring(msg.to.id)]['settings']['version'] then
     	version = data[tostring(msg.to.id)]['settings']['version']
    	end
@@ -266,8 +290,8 @@ local function show_group_settingsmod(msg, data, target)
    	end
 
   local settings = data[tostring(target)]['settings']
-  local text = "⚙Group Settings⚙ \n➖➖➖➖➖➖➖➖➖\n❌Lock Group Join❌ : "..settings.lock_join.."\n⭕Lock Group Tag⭕ : "..settings.antitag.."\n🚫Lock Group Ads🚫 : "..settings.antilink.."\n🔡Lock Group Name🔡 : "..settings.lock_name.."\n🗽Lock Group Photo🗽 : "..settings.lock_photo.."\n⛔Lock Group Member⛔ : "..settings.lock_member.."\n🔤Lock Group English🔤 : "..lock_eng.."\n📛Lock Group Arabic📛 : "..settings.lock_arabic.."\n🔞Lock Group BadWords🔞 : "..lock_badw.."\n🎭Lock Group Sticker🎭 : "..lock_sticker.."\n↔Lock Group Forward↔ : "..lock_fwd.."\n📺Lock Group Media📺 : "..lock_media.."\n😜Lock Group Emoji😜 : "..lock_emoji.."\n📣Lock Group Chat📣 : "..lock_chat.."\n⇄Lock Group Leave⇄ : "..leave_ban.."\n🔣Flood Sensitivity🔣 : "..NUM_MSG_MAX.."\n👾Bot Protection👾 : "..bots_protection.."\n💬Group Model💬 : "..groupmodel.."\n🆚Version🆚 : "..version.."\n➖➖➖➖➖➖➖➖➖\n🔘@BeyondTeam"--"\nPublic🚸: "..public
-  return text
+  local text = "⚙#Group Settings⚙ \n➖➖➖➖➖➖➖➖\n#Lock Group /Join : "..settings.lock_join.."\n#Lock Group /Tag : "..settings.antitag.."\n#Lock Group /Ads : "..settings.antilink.."\n#Lock Group /Name : "..settings.lock_name.."\n#Lock Group /Photo : "..settings.lock_photo.."\n#Lock Group /Member : "..settings.lock_member.."\n#Lock Group /English : "..lock_eng.."\n#Lock Group /Arabic : "..settings.lock_arabic.."\n#Lock Group /BadWords : "..lock_badw.."\n#Lock Group /Sticker : "..lock_sticker.."\n#Lock Group /Forward : "..lock_fwd.."\n#Lock Group /Media : "..lock_media.."\n#Lock Group /Emoji : "..lock_emoji.."\n#Lock Group /Chat : "..lock_chat.."\n#Lock Group /Video : "..lock_video.."\n#Lock Group /Gifs : "..lock_gifs.."\n#Lock Group /Contact : "..lock_contact.."\n#Lock Group /Photos : "..lock_photos.."\n#Lock Group /Audio : "..lock_audio.."\n#Lock Group /Poker : "..lock_poker.."\n#Lock Group /Leave : "..leave_ban.."\n#Flood /Sensitivity : "..NUM_MSG_MAX.."\n#Bot /Protection : "..bots_protection.."\n#Group /Model : "..groupmodel.."\n#Version : "..version.."\n➖➖➖➖➖➖➖➖\n🔘Open Source\n🔘@BeyondTeam"--"\nPublic🚸: "..public
+return text
 end
 
 local function set_descriptionmod(msg, data, target, about)
@@ -448,6 +472,167 @@ data[tostring(target)]['settings']['antitag'] = 'no'
 save_data(_config.moderation.data, data)
 return 'قفل تگ غیر فعال شد.'
 end
+end
+local function lock_group_video(msg, data, target)
+  if not is_momod(msg) then
+    return "فقط مخصوص مدیران!"
+  end
+  local group_video_lock = data[tostring(target)]['settings']['lock_video']
+  if group_video_lock == 'yes' then
+    return 'قفل فیلم از قبل فعال بود.'
+  else
+    data[tostring(target)]['settings']['lock_video'] = 'yes'
+    save_data(_config.moderation.data, data)
+    return 'قفل فیلم فعال شد.'
+  end
+end
+
+local function unlock_group_video(msg, data, target)
+  if not is_momod(msg) then
+    return "فقط مخصوص مدیران!"
+  end
+  local group_video_lock = data[tostring(target)]['settings']['lock_video']
+  if group_video_lock == 'no' then
+    return 'قفل فیلم از قبل فعال نبود.'
+  else
+    data[tostring(target)]['settings']['lock_video'] = 'no'
+    save_data(_config.moderation.data, data)
+    return 'قفل فیلم غیر فعال شد.'
+  end
+end
+local function lock_group_photos(msg, data, target)
+  if not is_momod(msg) then
+    return 'فقط مخصوص مدیران!'
+  end
+  local group_photos_lock = data[tostring(target)]['settings']['lock_photos']
+  if group_photos_lock == 'yes' then
+    return 'قفل اشتراک گذاری عکس از قبل فعال بود.'
+  else
+    data[tostring(target)]['settings']['lock_photos'] = 'yes'
+    save_data(_config.moderation.data, data)
+    return 'قفل اشتراک گذاری عکس فعال شد.'
+  end
+end
+
+local function unlock_group_photos(msg, data, target)
+  if not is_momod(msg) then
+    return 'فقط مخصوص مدیران!'
+  end
+  local group_photos_lock = data[tostring(target)]['settings']['lock_photos']
+  if group_photos_lock == 'no' then
+    return 'قفل اشتراک گذاری عکس از قبل فعال نبود.'
+  else
+    data[tostring(target)]['settings']['lock_photos'] = 'no'
+    save_data(_config.moderation.data, data)
+    return 'قفل اشتراک گذاری عکس غیر فعال شد.'
+  end
+end
+local function lock_group_contact(msg, data, target)
+  if not is_momod(msg) then
+    return 'فقط مخصوص مدیران!'
+  end
+  local group_contact_lock = data[tostring(target)]['settings']['lock_contact']
+  if group_contact_lock == 'yes' then
+    return 'قفل اشتراک گذاری مخاطب از قبل فعال بود.'
+  else
+    data[tostring(target)]['settings']['lock_contact'] = 'yes'
+    save_data(_config.moderation.data, data)
+    return 'قفل اشتراک گذاری مخاطب فعال شد.'
+  end
+end
+
+local function unlock_group_contact(msg, data, target)
+  if not is_momod(msg) then
+    return 'فقط مخصوص مدیران!'
+  end
+  local group_contact_lock = data[tostring(target)]['settings']['lock_contact']
+  if group_contact_lock == 'no' then
+    return 'قفل اشتراک گذاری مخاطب از قبل فعال نبود.'
+  else
+    data[tostring(target)]['settings']['lock_contact'] = 'no'
+    save_data(_config.moderation.data, data)
+    return 'قفل اشتراک گذاری مخاطب غیر فعال شد.'
+  end
+end
+local function lock_group_gifs(msg, data, target)
+  if not is_momod(msg) then
+    return 'فقط مخصوص مدیران!'
+  end
+  local group_gifs_lock = data[tostring(target)]['settings']['lock_gifs']
+  if group_gifs_lock == 'yes' then
+    return 'قفل گیف از قبل فعال بود.'
+  else
+    data[tostring(target)]['settings']['lock_gifs'] = 'yes'
+    save_data(_config.moderation.data, data)
+    return 'قفل گیف فعال شد.'
+  end
+end
+
+local function unlock_group_gifs(msg, data, target)
+  if not is_momod(msg) then
+    return 'فقط مخصوص مدیران!'
+  end
+  local group_gifs_lock = data[tostring(target)]['settings']['lock_gifs']
+  if group_gifs_lock == 'no' then
+    return 'قفل گیف از قبل فعال نبود.'
+  else
+    data[tostring(target)]['settings']['lock_gifs'] = 'no'
+    save_data(_config.moderation.data, data)
+    return 'قفل گیف غیر فعال شد.'
+  end
+end
+local function lock_group_audio(msg, data, target)
+if not is_momod(msg) then
+return "فقط مخصوص مدیران!"
+end
+local group_audio_lock = data[tostring(target)]['settings']['lock_audio']
+if group_audio_lock == 'yes' then
+return 'قفل ارسال صدا از قبل فعال بود.'
+else
+data[tostring(target)]['settings']['lock_audio'] = 'yes'
+save_data(_config.moderation.data, data)
+return 'قفل ارسال صدا فعال شد.'
+end
+end
+local function unlock_group_audio(msg, data, target)
+if not is_momod(msg) then
+return "قفط مخصوص مدیران!"
+end
+local group_audio_lock = data[tostring(target)]['settings']['lock_audio']
+if group_audio_lock == 'no' then
+return 'قفل ارسال صدا از قبل فعال نبود.'
+else
+data[tostring(target)]['settings']['audio'] = 'no'
+save_data(_config.moderation.data, data)
+return 'قفل صدا غیر فعال شد.'
+end
+end
+local function lock_group_poker(msg, data, target)
+  if not is_momod(msg) then
+    return 'فقط مخصوص مدیران!'
+  end
+  local group_poker_lock = data[tostring(target)]['settings']['lock_poker']
+  if group_poker_lock == 'yes' then
+    return 'قفل پوکر از قبل فعال بود.'
+  else
+    data[tostring(target)]['settings']['lock_poker'] = 'yes'
+    save_data(_config.moderation.data, data)
+    return 'قفل پوکر فعال شد.'
+  end
+end
+
+local function unlock_group_poker(msg, data, target)
+  if not is_momod(msg) then
+    return 'فقط مخصوص مدیران!'
+  end
+  local group_poker_lock = data[tostring(target)]['settings']['lock_poker']
+  if group_poker_lock == 'no' then
+    return 'قفل پوکر از قبل فعال نبود.'
+  else
+    data[tostring(target)]['settings']['lock_poker'] = 'no'
+    save_data(_config.moderation.data, data)
+    return 'قفل پوکر غیر فعال شد.'
+  end
 end
 local function lock_group_join(msg, data, target)
 if not is_momod(msg) then
@@ -787,7 +972,8 @@ local function lock_group_chat(msg, data, target)
     return 'قفل چت از قبل فعال بود.' else
     data[tostring(target)]['settings']['lock_chat'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'قفل چت فعال شد.'  end
+    return 'قفل چت فعال شد.'  
+    end
 end
 
 local function unlock_group_chat(msg, data, target)
@@ -1480,6 +1666,30 @@ end
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked chat")
         return lock_group_chat(msg, data, target)
       end
+           if matches[2] == 'video' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked video ")
+        return lock_group_video(msg, data, target)
+        end
+      if matches[2] == 'photos' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked photos ")
+        return lock_group_photos(msg, data, target)
+      end
+      if matches[2] == 'gifs' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked gifs ")
+        return lock_group_gifs(msg, data, target)
+      end
+      if matches[2] == 'contact' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked contact ")
+        return lock_group_contact(msg, data, target)
+      end
+      if matches[2] == 'audio' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked audio ")
+        return lock_group_audio(msg, data, target)
+      end
+      if matches[2] == 'poker' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked poker ")
+        return lock_group_poker(msg, data, target)
+      end
        
 	 if matches[2] == 'ads' then
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked link ")
@@ -1560,6 +1770,30 @@ end
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked chat")
         return unlock_group_chat(msg, data, target)
       end
+           if matches[2] == 'video' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked video ")
+        return unlock_group_video(msg, data, target)
+      end
+      if matches[2] == 'photos' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked photos ")
+        return unlock_group_photos(msg, data, target)
+      end
+      if matches[2] == 'gifs' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked gifs ")
+        return unlock_group_gifs(msg, data, target)
+      end
+      if matches[2] == 'contact' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked contact ")
+        return unlock_group_contact(msg, data, target)
+      end
+	  if matches[2] == 'audio' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked audio ")
+        return unlock_group_audio(msg, data, target)
+      end
+      if matches[2] == 'poker' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked poker ")
+        return unlock_group_poker(msg, data, target)
+      end
      
 	 if matches[2] == 'tag' then
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked tag ")
@@ -1619,6 +1853,30 @@ end
        if matches[2] == 'چت' then
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked chat")
         return lock_group_chat(msg, data, target)
+      end
+                if matches[2] == 'فیلم' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked video ")
+        return lock_group_video(msg, data, target)
+        end
+      if matches[2] == 'عکس ها' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked photos ")
+        return lock_group_photos(msg, data, target)
+      end
+      if matches[2] == 'گیف' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked gifs ")
+        return lock_group_gifs(msg, data, target)
+      end
+      if matches[2] == 'مخاطب' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked contact ")
+        return lock_group_contact(msg, data, target)
+      end
+      if matches[2] == 'صدا' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked audio ")
+        return lock_group_audio(msg, data, target)
+      end
+      if matches[2] == 'پوکر' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked poker ")
+        return lock_group_poker(msg, data, target)
       end
        
 	 if matches[2] == 'تبلیغات' then
@@ -1699,6 +1957,30 @@ end
        if matches[2] == 'چت' then
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked chat")
         return unlock_group_chat(msg, data, target)
+      end
+         if matches[2] == 'فیلم' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked video ")
+        return unlock_group_video(msg, data, target)
+      end
+      if matches[2] == 'عکس ها' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked photos ")
+        return unlock_group_photos(msg, data, target)
+      end
+      if matches[2] == 'گیف' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked gifs ")
+        return unlock_group_gifs(msg, data, target)
+      end
+      if matches[2] == 'مخاطب' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked contact ")
+        return unlock_group_contact(msg, data, target)
+      end
+	  if matches[2] == 'صدا' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked audio ")
+        return unlock_group_audio(msg, data, target)
+      end
+      if matches[2] == 'پوکر' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked poker ")
+        return unlock_group_poker(msg, data, target)
       end
      
 	 if matches[2] == 'تگ' then
@@ -1910,20 +2192,33 @@ end
           save_data(_config.moderation.data, data)
         end
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] cleaned modlist")
+send_large_msg(get_receiver(msg), "لیست مدیران پاک شد.")
       end
       if matches[2] == 'rules' or matches[2] == 'قوانین' then 
         local data_cat = 'rules'
         data[tostring(msg.to.id)][data_cat] = nil
         save_data(_config.moderation.data, data)
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] cleaned rules")
+send_large_msg(get_receiver(msg), "قوانین پاک شد.")
       end
       if matches[2] == 'about'or matches[2] == 'توضیحات' then 
         local data_cat = 'description'
         data[tostring(msg.to.id)][data_cat] = nil
         save_data(_config.moderation.data, data)
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] cleaned about")
+send_large_msg(get_receiver(msg), "توضیحات پاک شد.")
       end     
-    end
+if matches[2] == 'banlist' or matches[2] == 'لیست بن' then 
+local chat_id = msg.to.id
+local hash = 'banned:'..chat_id
+        local data_cat = 'banlist'
+        data[tostring(msg.to.id)][data_cat] = nil
+        save_data(_config.moderation.data, data)
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] cleaned banlist")
+send_large_msg(get_receiver(msg), "لیست بن پاک شد.")
+redis:del(hash)
+end
+end
     if matches[1] == 'kill' and matches[2] == 'chat' then
       if not is_admin(msg) then
           return nil
@@ -2011,7 +2306,7 @@ return {
   "^[#!/](rem) (realm)$",
   "^[#!/](rules)$",
   "^[#!/](about)$",
-  "^[#!/](setname) (.*)$",
+  --"^[#!/](setname) (.*)$",
   "^[#!/](setphoto)$",
   "^[#!/](promote) (.*)$",
   "^[#!/](promote)$",
@@ -2036,6 +2331,7 @@ return {
   "^[#!/](modlist)$",
   "^[#!/](newlink)$",
   "^[#!/](link)$",
+  "^[#!/](setlink)$",
   "^[#!/](linkpv)$",
   "^[#!/](kickinactive)$",
   "^[#!/](kickinactive) (%d+)$",
@@ -2044,7 +2340,7 @@ return {
   "^([Rr]em)$",
   "^([Rr]ules)$",
   "^({Aa]bout)$",
-  "^([Ss]etname) (.*)$",
+  --"^([Ss]etname) (.*)$",
   "^([Ss]etphoto)$",
   "^([Pp]romote) (.*)$",
   "^([Pp]romote)$",

@@ -2,7 +2,7 @@ do
 
 function run(msg, matches)
 	if msg.to.type == 'chat' and is_momod(msg) then
-  return 'Tele Bd Team Command List'..[[
+  return 'Tele Beyond Command List'..[[
 
 ❤لیست دستورات💙:
 🔴kick [آیدی،یوزر،ریپلی] 
@@ -34,7 +34,8 @@ function run(msg, matches)
 ➖➖➖➖➖➖➖
 🔴lock 
 🔸[tag|link|member|sticker|arabic|media|
-🔸chat|leave|eng|badw|bots|name|fwd|emoji]
+🔸chat|leave|eng|badw|bots|name|fwd|emoji
+🔸video|audio|gifs|contact|photos|poker]
 🔹قفل کردن موارد مورد نظر
 🔹مثال:
 🔵lock name
@@ -46,6 +47,7 @@ function run(msg, matches)
 🔴unlock
 🔸[tag|link|member|sticker|arabic|media|
 🔸chat|leave|eng|badw|bots|name|fwd|emoji]
+🔸video|audio|gifs|contact|photos|poker]
 🔹باز کردن موارد قفل شده
 🔹مثال:
 🔵unlock name
@@ -105,7 +107,7 @@ feedback (متن)
 !kosgo
 استفاده کنید👌😂
 ➖➖➖➖➖➖➖
-V 4.5 @TeleBeyond
+Final Version @TeleBeyond
 Team Channel : @BeyondTeam
 Sudo Users :  👤
 @SoLiD021

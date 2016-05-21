@@ -2,7 +2,7 @@ do
 
 function run(msg, matches)
 	if msg.to.type == 'chat' then
-  return 'Tele Bd Team Fun Command List'.. [[
+  return 'Tele Beyond Fun Command List'.. [[
 
 💙 ليست دستورات به زبان فارسي ❤:️
 
@@ -63,7 +63,7 @@ function run(msg, matches)
 !kosgo
 استفاده کنید👌😂
 ➖➖➖➖➖➖➖
-V 4.5 @TeleBeyond
+Final Version @TeleBeyond
 Team Channel  @BeyondTeam
 Sudo Users :  👤
 @SoLiD021

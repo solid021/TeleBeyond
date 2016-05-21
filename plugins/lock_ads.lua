@@ -15,6 +15,7 @@ local function run(msg, matches)
     if antilink == "yes" then
         send_large_msg(chat, 'تبلیغات ممنوعه😐✋')
         chat_del_user(chat, user, ok_cb, true)
+        chat_ban_user(chat, user, ok_cb, true)
     end
 end
  
