@@ -1,6 +1,6 @@
-#TeleBeyond
+#TeleBeyond Final Version
 
-**An advanced and powerful administration bot based on #(TeleSeed) licensed under the [GNU General Public License](https://github.com/solid021/TeleBeyond/blob/master/LICENSE)**.
+**An advanced and powerful administration bot based on TeleSeed licensed under the [GNU General Public License](https://github.com/solid021/TeleBeyond/blob/master/LICENSE)**.
 
 #Don't Forget Star To Us ;)
 
@@ -67,6 +67,6 @@ Seed Team
 
 My Team
 
-And All My Friend
+And All My Friends
 
 #Good Luck :D
