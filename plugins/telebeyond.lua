@@ -10,18 +10,20 @@ Tele Beyond Final Version
 An Administrator The PowerFull Bot Based On TeleSeed And Bilingual Written In Lua
     
 Sudo Users :
+
 Developer&Founder : @SoLiD021
 Developer&Manager : @MrHalix
-    
+Developer&Manager : @idivanmanheb
+
 Team Channel :
 @BeyondTeam
      
 Special Thx To :
-@idivanmanheb
+
 Beyond Team
 And All My Friends :D
      
-TeleBeyond (Open Source) V4.5 :
+TeleBeyond (Open Source) Final Version :
 Https://Github.com/solid021/TeleBeyond
  ]]
   end
