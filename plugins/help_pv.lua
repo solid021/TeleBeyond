@@ -74,7 +74,7 @@ function run(msg, matches)
 ▶با این دستور ربات شمارو به گروه مورد نظر دعوت میکند
 
 ➖➖➖➖➖➖➖
-V 4.5 @TeleBeyond
+Final Version @TeleBeyond
 Team Channel : @BeyondTeam
 Sudo Users :  ðŸ‘¤
 @SoLiD021
