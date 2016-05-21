@@ -1,31 +1,16 @@
-do
-
 local function run(msg, matches)
+  local eq = matches[1]
 
-
-local text = matches[1]
-
-  local b = 1
-
-  while b ~= 0 do
-    textc = text:trim()
-    text,b = text:gsub(' ','.')
-    
-    
-  if msg.to.type == 'user' then 
-      return nil
-      else
-  local url = "http://tts.baidu.com/text2audio?lan=en&ie=UTF-8&text="..textc
+  local url = "http://www.farsireader.com/PlayText.aspx?Text="..URL.escape(eq).."&Punc=false"
   local receiver = get_receiver(msg)
-  local file = download_to_file(url,'TeleBD_Tts.mp3')
-      send_audio('chat#id'..msg.to.id, file, ok_cb , false)
+  local file = download_to_file(url,'TeleBeyond.mp3')
+  send_audio('chat#id'..msg.to.id, file, ok_cb , false)
 end
-end
-  end
+
 return {
-  description = "text to voice",
+  description = "Convert text to voice",
   usage = {
-    "!voice [text]"
+    "tts [text]: Convert text to voice"
   },
   patterns = {
     "^!voice +(.*)$",
@@ -34,9 +19,9 @@ return {
     "^/tts +(.*)$",
     "^!ts +(.*)$",
     "^/ts +(.*)$",
-    "^ویس +(.*)$",
+    "^[Tt]ts (.+)$",
+    "^ویس +(.+)$"
   },
   run = run
 }
 
-end

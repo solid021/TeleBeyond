@@ -27,15 +27,15 @@ local function run(msg,matches)
      redis:set("photo:setsticker", "waiting")
      return 'Please send your photo now'
     end
-	if matches[1]:lower() == 'telebd' then --[[Your bot name]]
+	if matches[1]:lower() == 'beyond' then --[[Your bot name]]
 	send_document(get_receiver(msg), "sticker.webp", ok_cb, false)
 end
 end
 return {
   patterns = {
  "^[!#/](setsticker)$",
- "^([Tt][Ee][Ll][Ee][Bb][Dd])$",
- "^[!#/]([Tt]elebd)$",
+ "^([Bb][Ee][Yy][Oo][Nn][Dd])$",
+ "^[!#/]([Bb]eyond)$",
  "%[(photo)%]",
   },
   run = run,

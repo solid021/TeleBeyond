@@ -27,17 +27,17 @@ local function list_all_plugins(only_enabled)
   local nsum = 0
   for k, v in pairs( plugins_names( )) do
     --  ✔ enabled, ❌ disabled
-    local status = '❌'
+    local status = '/Disable➣'
     nsum = nsum+1
     nact = 0
     -- Check if is enabled
     for k2, v2 in pairs(_config.enabled_plugins) do
       if v == v2..'.lua' then 
-        status = '✔' 
+        status = '/Enable➣' 
       end
       nact = nact+1
     end
-    if not only_enabled or status == '✔' then
+    if not only_enabled or status == '/Enable➣' then
       -- get the name
       v = string.match (v, "(.*)%.lua")
       text = text..nsum..'.'..status..' '..v..' \n'
@@ -52,17 +52,17 @@ local function list_plugins(only_enabled)
   local nsum = 0
   for k, v in pairs( plugins_names( )) do
     --  ✔ enabled, ❌ disabled
-    local status = '❌'
+    local status = '/Disable➣'
     nsum = nsum+1
     nact = 0
     -- Check if is enabled
     for k2, v2 in pairs(_config.enabled_plugins) do
       if v == v2..'.lua' then 
-        status = '✔' 
+        status = '/Enable➣' 
       end
       nact = nact+1
     end
-    if not only_enabled or status == '✔' then
+    if not only_enabled or status == '/Enable➣' then
       -- get the name
       v = string.match (v, "(.*)%.lua")
      -- text = text..v..'  '..status..'\n'
@@ -153,7 +153,7 @@ end
 
 local function run(msg, matches)
   -- Show the available plugins 
-  if matches[1] == '!plug' and is_sudo(msg) then --after changed to moderator mode, set only sudo
+  if matches[1]:lower() == '!plist' and is_sudo(msg) then --after changed to moderator mode, set only sudo
     return list_all_plugins()
   end
 
@@ -197,7 +197,7 @@ local function run(msg, matches)
   if matches[1] == '*' and is_sudo(msg) then --after changed to moderator mode, set only sudo
     return reload_plugins(true)
   end
-  if matches[1] == 'reload' and is_sudo(msg) then --after changed to moderator mode, set only sudo
+  if matches[1]:lower() == 'reload' and is_sudo(msg) then --after changed to moderator mode, set only sudo
     return reload_plugins(true)
   end
 end
@@ -210,18 +210,18 @@ return {
           "!plug enable [plugin] chat : enable plugin only this chat.",
           },
       sudo = {
-          "!plug : list all plugins.",
-          "!plug + [plugin] : enable plugin.",
-          "!plug - [plugin] : disable plugin.",
-          "!plug * : reloads all plugins." },
+          "!plist : list all plugins.",
+          "!pl + [plugin] : enable plugin.",
+          "!pl - [plugin] : disable plugin.",
+          "!pl * : reloads all plugins." },
           },
   patterns = {
-    "^!plug$",
-    "^!plug? (+) ([%w_%.%-]+)$",
-    "^!plug? (-) ([%w_%.%-]+)$",
-    "^!plug? (+) ([%w_%.%-]+) (chat)",
-    "^!plug? (-) ([%w_%.%-]+) (chat)",
-    "^!plug? (*)$",
+    "^!plist$",
+    "^!pl? (+) ([%w_%.%-]+)$",
+    "^!pl? (-) ([%w_%.%-]+)$",
+    "^!pl? (+) ([%w_%.%-]+) (chat)",
+    "^!pl? (-) ([%w_%.%-]+) (chat)",
+    "^!pl? (*)$",
     "^[!/](reload)$"
     },
   run = run,
