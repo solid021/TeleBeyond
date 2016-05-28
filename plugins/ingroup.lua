@@ -235,9 +235,9 @@ local function show_group_settingsmod(msg, data, target)
     if data[tostring(msg.to.id)]['settings']['lock_badw'] then
         lock_badw = data[tostring(msg.to.id)]['settings']['lock_badw']
         end
-        local lock_sticker = "ok"
-    if data[tostring(msg.to.id)]['settings']['sticker'] then
-        lock_sticker = data[tostring(msg.to.id)]['settings']['sticker']
+        local lock_sticker = "no"
+    if data[tostring(msg.to.id)]['settings']['lock_sticker'] then
+        lock_sticker = data[tostring(msg.to.id)]['settings']['lock_sticker']
         end
         local lock_chat = "no"
     if data[tostring(msg.to.id)]['settings']['lock_chat'] then
@@ -939,11 +939,11 @@ local function lock_group_sticker(msg, data, target)
   if not is_momod(msg) then
     return "فقط مخصوص مدیران!"
   end
-  local group_sticker_lock = data[tostring(target)]['settings']['sticker']
-  if group_sticker_lock == 'kick' then
+  local group_sticker_lock = data[tostring(target)]['settings']['lock_sticker']
+  if group_sticker_lock == 'yes' then
     return 'قفل استیکر از قبل فعال بود.'
   else
-    data[tostring(target)]['settings']['sticker'] = 'kick'
+    data[tostring(target)]['settings']['lock_sticker'] = 'yes'
     save_data(_config.moderation.data, data)
     return 'قفل استیکر فعال شد.'
   end
@@ -953,11 +953,11 @@ local function unlock_group_sticker(msg, data, target)
   if not is_momod(msg) then
     return "فقط مخصوص مدیران!"
   end
-  local group_sticker_lock = data[tostring(target)]['settings']['sticker']
-  if group_sticker_lock == 'ok' then
+  local group_sticker_lock = data[tostring(target)]['settings']['lock_sticker']
+  if group_sticker_lock == 'no' then
     return 'قفل استیکر از قبل فعال نبود.'
   else
-    data[tostring(target)]['settings']['sticker'] = 'ok'
+    data[tostring(target)]['settings']['lock_sticker'] = 'no'
     save_data(_config.moderation.data, data)
     return 'قفل استیکر غیر فعال شد.'
   end
